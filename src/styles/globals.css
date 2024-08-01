@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.profilePicContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profilePic {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 4px solid #D6D7DA;
+  position: relative;
+  overflow: hidden;
+  --mouse-x: 0.5;
+  --mouse-y: 0.5;
+  transition: border-radius 0.1s ease-in-out;
+  border-radius: 
+    calc(50% - var(--mouse-x) * 30%) 
+    calc(50% - (1 - var(--mouse-x)) * 30%) 
+    calc(50% - (1 - var(--mouse-y)) * 30%) 
+    calc(50% - var(--mouse-y) * 30%);
+}
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.carousel-item {
+  flex: none;
+  scroll-snap-align: start;
+  width: 600px;
+  height: 400px;
+  margin-right: 16px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+body {
+  background-color: #D6D7DA;
+  top: 100px;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
