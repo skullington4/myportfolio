@@ -16,7 +16,7 @@ const projects = [
         title: 'Pick Your Poison',
         description: 'This is an app that allows you to create a cocktail from scratch or pick a drink from a classic cocktail menu. Pick a glass, add spirit(s), add mixer(s), add a garnish, name it, and enjoy!',
         technologies: 'React, JavaScript, HTML, CSS, MongoDb',
-        images: ['/images/PickYourPoison.png'],
+        images: ['/Images/PickYourPoison.png'],
         githubUrl: 'https://github.com/skullington4/pickyourpoison',
         websiteUrl: 'https://pickyour-poison-d276c8edc8c1.herokuapp.com/',
     },
@@ -25,10 +25,10 @@ const projects = [
         description: 'Helping developers get connected with local or remote businesses to contract software engineering help. This platform allows any user to browse posts by businesses looking for software engineering help or a software engineer looking for work. Businesses can create posts outlining their needs, and engineers can showcase their skills and rates.',
         technologies: 'Python, Django, Neon PostgressSQL DB, Heroku, JavaScript, HTML5, CSS, Materialize',
         images: [
-            '/images/project1/En help.png',
-            '/images/project1/En home.png',
-            '/images/project1/En signup.png',
-            '/images/project1/En work.png'
+            '/Images/project1/En help.png',
+            '/Images/project1/En home.png',
+            '/Images/project1/En signup.png',
+            '/Images/project1/En work.png'
         ],
         githubUrl: 'https://github.com/skullington4/enginear',
         websiteUrl: 'https://enginearapp-f0ae5d54cb3b.herokuapp.com/',
@@ -38,11 +38,11 @@ const projects = [
         description: 'This is the game Blackjack! No splitting hands or doubling down. Player will go first and hit until they either stay or are over 21. Then it is the computer\'s turn. The winner is decided by getting blackjack or whoever has the higher number at or under 21.',
         technologies: 'JavaScript, HTML, CSS, Cards Library',
         images: [
-            '/images/project2/Blackjack.PNG',
-            '/images/project2/Bj 1.png',
-            '/images/project2/Bj 2.png',
-            '/images/project2/Bj 3.png',
-            '/images/project2/Bj 4.png',
+            '/Images/project2/Blackjack.PNG',
+            '/Images/project2/Bj 1.png',
+            '/Images/project2/Bj 2.png',
+            '/Images/project2/Bj 3.png',
+            '/Images/project2/Bj 4.png',
         ],
         githubUrl: 'https://github.com/skullington4/kevins-blackjack-game/',
         websiteUrl: 'https://skullington4.github.io/kevins-blackjack-game/',
@@ -52,11 +52,11 @@ const projects = [
         description: 'This website is a clothing retail store. You can log in using your Google account, browse items, rate items, add items to the cart, and purchase your items!',
         technologies: 'Node.JS, Express.js, HTML, CSS, MongoDB, Mongoose, OAuth',
         images: [
-            '/images/project3/PT details page.png',
-            '/images/project3/PT homepage.png',
-            '/images/project3/PT page1.png',
-            '/images/project3/PT page2.png',
-            '/images/project3/PureThreadsHome.PNG'
+            '/Images/project3/PT details page.png',
+            '/Images/project3/PT homepage.png',
+            '/Images/project3/PT page1.png',
+            '/Images/project3/PT page2.png',
+            '/Images/project3/PureThreadsHome.PNG'
         ],
         githubUrl: 'https://github.com/skullington4/pure-threads',
         websiteUrl: 'https://pure-threads.herokuapp.com',

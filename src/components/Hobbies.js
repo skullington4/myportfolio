@@ -5,28 +5,28 @@ const hobbies = [
   {
     title: 'Baseball',
     description: 'Growing up, baseball was everything. I played almost every day from the age of 5 to 19. If you asked the 10-year-old me what I was going to be, of course, I would have said a pitcher for the Yankees. My Senior year of high school, I was the captain of my team and was awarded First Team All Greater Rochester as a pitcher. Baseball taught me a lot about life, how to be a team player, how to find inspiration in great leaders, how to motivate those around me and lead by example, and how to take over when the time is right. While some dreams fade, others come to life.',
-    images: ['/images/hobbies/IMG_5906.jpg']
+    images: ['/Images/hobbies/IMG_5906.jpg']
   },
   {
     title: 'Guitar',
     description: 'Music has always been a huge part of my life. I am a fully self-taught guitar player who started when I was 21. I picked up my first guitar in college and loved everything about it. Putting in a lot of practice, and getting direct results was something that fits my personality perfectly. I was most surprised about the ability to change my mental state and be a release after playing. And no, I will not play Freebird.',
-    images: ['/images/hobbies/PlayingGuitar.PNG']
+    images: ['/Images/hobbies/PlayingGuitar.PNG']
   },
   {
     title: 'Fishing',
     description: 'I have spent a fair share of time in the past 2 years on boats, banks, and docks fishing. Honing my skills and practicing patience, I have been able to catch some pretty cool fish and have a blast doing it. There are a lot of life lessons to learn with a rod in your hand, and I am excited to keep learning them. Go Bills!',
     images: [
-      '/images/hobbies/fishing/IMG_4326.jpg',
-      '/images/hobbies/fishing/IMG_3314.jpg',
-      '/images/hobbies/fishing/IMG_5839.jpg',
-      '/images/hobbies/fishing/IMG_5985.jpg',
-      '/images/hobbies/fishing/IMG_8317.JPEG'
+      '/Images/hobbies/fishing/IMG_4326.jpg',
+      '/Images/hobbies/fishing/IMG_3314.jpg',
+      '/Images/hobbies/fishing/IMG_5839.jpg',
+      '/Images/hobbies/fishing/IMG_5985.jpg',
+      '/Images/hobbies/fishing/IMG_8317.JPEG'
     ]
   },
   {
     title: 'Travel',
     description: 'Travel is an important part of my life. I have been lucky enough to travel to some incredible places in my life with my partner, Anna. Some of my favorite places so far have been: Malaysia - Had the coolest scenery, delicious street food, and kindest people. Paris - Amazing architecture and some of the best food I have ever had. Lisbon - Breathtaking views, beautiful mosaic tiles, and the best custard tarts in the world. Sydney - As far from home as I have ever been, and it was worth it. Loved the city vibes and culture. Unfortunately, did not get to see any kangaroos.',
-    images: ['/images/hobbies/IMG_2594.jpeg']
+    images: ['/Images/hobbies/IMG_2594.jpeg']
   }
 ]
 

@@ -4,11 +4,11 @@ import Link from 'next/link'
 import '../styles/globals.css'
 
 const profileImages = [
-    '/images/IMG_6515.jpg',
-    '/images/IMG_9274.JPG',
-    '/images/IMG_1198.jpg',
-    '/images/IMG_3374.JPG',
-    '/images/IMG_4405.PNG',
+    '/Images/IMG_6515.jpg',
+    '/Images/IMG_9274.JPG',
+    '/Images/IMG_1198.jpg',
+    '/Images/IMG_3374.JPG',
+    '/Images/IMG_4405.PNG',
 ]
 
 export default function AboutMe() {
