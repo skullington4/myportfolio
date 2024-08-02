@@ -5,8 +5,8 @@ export default function Navbar() {
         <a href="#home" className="mx-2 scroll-smooth">Kevin Sullivan</a>
       </div>
       <div>
-        <a href="#projects" className="mx-2 scroll-smooth">Projects</a>
         <a href="#about" className="mx-2 scroll-smooth">About</a>
+        <a href="#projects" className="mx-2 scroll-smooth">Projects</a>
         <a href="#hobbies" className="mx-2 scroll-smooth">Hobbies</a>
       </div>
     </nav>
