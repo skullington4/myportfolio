@@ -1,7 +1,7 @@
-import { useState } from 'react'
-import { motion } from 'framer-motion'
-import Image from 'next/image'
-import Link from 'next/link'
+import { useState } from 'react';
+import { motion } from 'framer-motion';
+import Image from 'next/image';
+import Link from 'next/link';
 
 const projects = [
     {
@@ -61,12 +61,12 @@ const projects = [
         githubUrl: 'https://github.com/skullington4/pure-threads',
         websiteUrl: 'https://pure-threads.herokuapp.com',
     },
-]
+];
 
 const Projects = () => {
     return (
         <section className="container mx-auto px-4 py-8">
-            <h1 className="text-4xl font-bold text-center mb-8">PROJECTS</h1>
+            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center mb-8">PROJECTS</h1>
             {projects.map((project, index) => (
                 <motion.div
                     key={project.title}
@@ -77,9 +77,9 @@ const Projects = () => {
                     transition={{ duration: 1 }}
                 >
                     <div className="md:w-1/2 p-4 flex justify-start flex-col items-start">
-                        <h4 className="text-2xl font-semibold mb-2">{project.title}</h4>
-                        <p className="mb-4">{project.description}</p>
-                        <h6 className="mb-4"><strong>Technologies used:</strong> {project.technologies}</h6>
+                        <h4 className="text-xl sm:text-2xl font-semibold mb-2">{project.title}</h4>
+                        <p className="text-sm sm:text-base lg:text-lg mb-4">{project.description}</p>
+                        <h6 className="text-sm sm:text-base lg:text-lg mb-4"><strong>Technologies used:</strong> {project.technologies}</h6>
                         <div className="flex space-x-4">
                             <Link href={project.githubUrl} legacyBehavior>
                                 <a className="text-blue-500" target="_blank">Github Repo</a>
@@ -95,30 +95,30 @@ const Projects = () => {
                 </motion.div>
             ))}
         </section>
-    )
-}
+    );
+};
 
 const Carousel = ({ images }) => {
-    const [currentIndex, setCurrentIndex] = useState(0)
+    const [currentIndex, setCurrentIndex] = useState(0);
 
     const handlePrevClick = () => {
-        setCurrentIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1))
-    }
+        setCurrentIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
+    };
 
     const handleNextClick = () => {
-        setCurrentIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1))
-    }
+        setCurrentIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
+    };
 
     return (
         <div className="relative w-full max-w-xl mx-auto">
-            <div className="relative h-[30rem] overflow-hidden rounded-lg">
+            <div className="relative h-48 sm:h-64 lg:h-[30rem] overflow-hidden rounded-lg">
                 {images.map((image, index) => (
                     <div
                         key={index}
                         className={`absolute inset-0 transition-opacity duration-1000 ${index === currentIndex ? 'opacity-100' : 'opacity-0'
                             }`}
                     >
-                        <Image src={image} alt={`Image ${index}`} layout="fill" objectFit="contain" />
+                        <Image src={image} alt={`Image ${index}`} fill style={{ objectFit: 'contain' }} />
                     </div>
                 ))}
             </div>
@@ -139,7 +139,7 @@ const Carousel = ({ images }) => {
                 </>
             )}
         </div>
-    )
-}
+    );
+};
 
-export default Projects
+export default Projects;

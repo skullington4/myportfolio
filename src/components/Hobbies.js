@@ -1,5 +1,5 @@
-import { useState } from 'react'
-import Image from 'next/image'
+import { useState } from 'react';
+import Image from 'next/image';
 
 const hobbies = [
   {
@@ -28,43 +28,43 @@ const hobbies = [
     description: 'Travel is an important part of my life. I have been lucky enough to travel to some incredible places in my life with my partner, Anna. Some of my favorite places so far have been: Malaysia - Had the coolest scenery, delicious street food, and kindest people. Paris - Amazing architecture and some of the best food I have ever had. Lisbon - Breathtaking views, beautiful mosaic tiles, and the best custard tarts in the world. Sydney - As far from home as I have ever been, and it was worth it. Loved the city vibes and culture. Unfortunately, did not get to see any kangaroos.',
     images: ['/Images/hobbies/IMG_2594.jpeg']
   }
-]
+];
 
 const Hobbies = () => {
   return (
     <section className="container mx-auto px-4 py-8">
-      <h1 className="text-4xl font-bold text-center mb-8">AWAY FROM THE KEYBOARD</h1>
+      <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center mb-8">AWAY FROM THE KEYBOARD</h1>
       {hobbies.map((hobby, index) => (
         <div key={hobby.title} className="mb-16">
-          <h4 className="text-2xl font-semibold text-center mb-4">{hobby.title}</h4>
+          <h4 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-center mb-4">{hobby.title}</h4>
           <div className="flex flex-col md:flex-row items-center">
             <div className="md:w-1/2 p-4">
               <Carousel images={hobby.images} />
             </div>
             <div className="md:w-1/2 p-4">
-              <p className="text-lg">{hobby.description}</p>
+              <p className="text-sm sm:text-base lg:text-lg">{hobby.description}</p>
             </div>
           </div>
         </div>
       ))}
     </section>
-  )
-}
+  );
+};
 
 const Carousel = ({ images }) => {
-  const [currentIndex, setCurrentIndex] = useState(0)
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   const handlePrevClick = () => {
-    setCurrentIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1))
-  }
+    setCurrentIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
+  };
 
   const handleNextClick = () => {
-    setCurrentIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1))
-  }
+    setCurrentIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
+  };
 
   return (
     <div className="relative w-full max-w-xl mx-auto">
-      <div className="relative h-[30rem] overflow-hidden rounded-lg"> {/* Adjusted height, added overflow-hidden and rounded-lg */}
+      <div className="relative h-48 sm:h-64 lg:h-[30rem] overflow-hidden rounded-lg">
         {images.map((image, index) => (
           <div
             key={index}
@@ -72,7 +72,7 @@ const Carousel = ({ images }) => {
               index === currentIndex ? 'opacity-100' : 'opacity-0'
             }`}
           >
-            <Image src={image} alt={`Image ${index}`} layout="fill" objectFit="contain" />
+            <Image src={image} alt={`Image ${index}`} fill style={{ objectFit: 'contain' }} />
           </div>
         ))}
       </div>
@@ -93,7 +93,7 @@ const Carousel = ({ images }) => {
         </>
       )}
     </div>
-  )
-}
+  );
+};
 
-export default Hobbies
+export default Hobbies;
