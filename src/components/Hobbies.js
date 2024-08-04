@@ -37,7 +37,7 @@ const Hobbies = () => {
       {hobbies.map((hobby, index) => (
         <div key={hobby.title} className="mb-16">
           <h4 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-center mb-4">{hobby.title}</h4>
-          <div className="flex flex-col md:flex-row items-center">
+          <div className={`flex flex-col md:flex-row ${index % 2 === 0 ? 'md:flex-row-reverse' : ''} items-center`}>
             <div className="md:w-1/2 p-4">
               <Carousel images={hobby.images} />
             </div>
@@ -68,9 +68,7 @@ const Carousel = ({ images }) => {
         {images.map((image, index) => (
           <div
             key={index}
-            className={`absolute inset-0 transition-opacity duration-1000 ${
-              index === currentIndex ? 'opacity-100' : 'opacity-0'
-            }`}
+            className={`absolute inset-0 transition-opacity duration-1000 ${index === currentIndex ? 'opacity-100' : 'opacity-0'}`}
           >
             <Image src={image} alt={`Image ${index}`} fill style={{ objectFit: 'contain' }} />
           </div>
